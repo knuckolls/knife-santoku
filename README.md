@@ -59,7 +59,7 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	  notify :hipchat
 	end
 	
-If you placed that in the config/santoku-after.rb file, you should start receiving notifications in your hipchat room that someone has altered something on the server with knife.
+If you placed that in the config/santoku-after.rb file, you should start receiving notifications in your hipchat room whenever someone alters something on the server with knife.
 
 ## Installation
 
@@ -79,7 +79,7 @@ Or install it yourself as:
 * Add in the logic for end user drop in notification plugins
 * Better tests
 * Merge real callback functionality into the upstream knife codebase.
-** This just lets you notify before and after knife commands. It would be best to be able to hook right in with knife.
+  * Santoku just lets you notify before and after knife commands. It would be best and most flexible to be able to hook right in with knife.
 
 ## Contributing
 
