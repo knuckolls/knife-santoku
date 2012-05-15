@@ -1,30 +1,24 @@
 ## Monkeypatch knife to add in callback support
 
+
 class Chef::Application::Knife
   
   # Run knife
   def run
+    require 'santoku'
+    santoku = ::Santoku::Application.new(ARGV)
+
     Mixlib::Log::Formatter.show_time = false
     validate_and_parse_options
     quiet_traps
-    
-    ## added by santoku
-    before_callbacks(ARGV)
-    
+
+    santoku.run_before_callbacks
+
     Chef::Knife.run(ARGV, options)
-    
-    ## added by santoku
-    after_callbacks(ARGV)
+
+    santoku.run_before_callbacks
 
     exit 0
-  end
-
-  def before_callbacks(args)
-    puts "before"
-  end
-
-  def after_callbacks(args)
-    puts "after"
   end
 
 end

@@ -22,11 +22,10 @@
 ## Adapted from Opscode's knife code
 
 require 'rubygems'
+$:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", "lib")))
 require 'chef/application/knife'
 
-## monkey patch knife to add in santoku's callbacks
 require 'santoku'
-
 
 Chef::Application::Knife.new.run
 

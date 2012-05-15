@@ -16,4 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Santoku::VERSION
   
   gem.add_dependency "chef"
+  gem.add_dependency "httparty"
+  gem.add_dependency "app_conf"
 end
