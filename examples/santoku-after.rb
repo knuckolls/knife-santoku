@@ -1,3 +1,5 @@
+## Put this in config/santoku-after.rb
+
 match /spork/ do
   notify :hipchat, "Someone used the spork plugin"
 end

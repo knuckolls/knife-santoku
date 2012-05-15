@@ -1,3 +1,5 @@
+## Put this in config/santoku-config.yml
+
 hipchat:
     token: "your_hipchat_api_token"
     room: "developers"
