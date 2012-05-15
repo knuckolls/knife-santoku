@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["kevin.nuckolls@gmail.com"]
   gem.description   = "A drop in replacement for knife that helps you build out processes around Chef"
   gem.summary       = ""
-  gem.homepage      = "http://www.github.com/knuckolls/santoku"
+  gem.homepage      = "http://www.github.com/knuckolls/knife-santoku"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
