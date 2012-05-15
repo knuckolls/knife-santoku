@@ -72,7 +72,7 @@ After configuring all of that you should start receiving notifications in your h
 
 Add this line to your application's Gemfile:
 
-    gem 'santoku'
+    gem 'knife-santoku'
 
 And then execute:
 
@@ -80,7 +80,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install santoku
+    $ gem install knife-santoku
 
 ## Todo
 * Add in the logic for end user drop in notification plugins
