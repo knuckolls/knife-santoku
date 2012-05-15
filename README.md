@@ -10,6 +10,8 @@ Santoku is primarily used for firing off notifications when knife commands are r
 
 Right now only Hipchat is support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems. If you build out something and would like it added to the master project just send me a pull request.
 
+You don't have to use Santoku for notifications, that's just what it was originally built for.
+
 ## Usage
 
 Just run knife commands with the santoku command instead of knife. 
