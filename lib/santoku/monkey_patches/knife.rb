@@ -16,7 +16,7 @@ class Chef::Application::Knife
 
     Chef::Knife.run(ARGV, options)
 
-    santoku.run_before_callbacks
+    santoku.run_after_callbacks
 
     exit 0
   end

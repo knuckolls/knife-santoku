@@ -4,7 +4,7 @@ module Santoku
     def initialize(config)
       @config = config
       
-      @notifiers = { :hipchat => ::Santoku::Notification::HipchatNotifier.class }
+      @notifiers = { :hipchat => ::Santoku::Notification::HipchatNotifier }
       
       # iterate through our internal folder and our external folder for notification classes
     end

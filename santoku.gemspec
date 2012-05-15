@@ -4,7 +4,7 @@ require File.expand_path('../lib/santoku/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Kevin Nuckolls"]
   gem.email         = ["kevin.nuckolls@gmail.com"]
-  gem.description   = "a wrapper for knife that helps you build up processes around chef"
+  gem.description   = "A wrapper for knife that helps you build up processes around chef"
   gem.summary       = ""
   gem.homepage      = "http://www.github.com/knuckolls/santoku"
 

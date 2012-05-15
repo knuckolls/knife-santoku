@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# ./santoku - Flexible Wrapper for the 'knife' Chef CLI interface 
+# ./santoku - A flexible wrapper for the 'knife' Chef CLI interface 
 #
 # Author:: Kevin Nuckolls(<kevin.nuckolls@gmail.com>)
 # Author:: Adam Jacob (<adam@opscode.com>)
@@ -19,12 +19,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-## Adapted from Opscode's knife code
+## Adapted from Opscode's knife initializer @ https://github.com/opscode/chef
 
 require 'rubygems'
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", "lib")))
 require 'chef/application/knife'
 
+## Contains monkeypatches for Chef::Application::Knife. Shims in Santoku.
 require 'santoku'
 
 Chef::Application::Knife.new.run
