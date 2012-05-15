@@ -79,7 +79,8 @@ Or install it yourself as:
 * Add in the logic for end user drop in notification plugins
 * Better tests
 * Merge real callback functionality into the upstream knife codebase.
-  * Santoku just lets you notify before and after knife commands. It would be best and most flexible to be able to hook right in with knife.
+  * Santoku only lets you notify before and after knife commands. 
+  * It would be best and most flexible to be able to hook right in with knife inside opscode's codebase.
 
 ## Contributing
 
