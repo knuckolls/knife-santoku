@@ -1,8 +1,6 @@
-# Santoku
+# Santoku - A drop in replacement for knife that helps you build out processes around Chef
 
-[![Santoku](http://upload.wikimedia.org/wikipedia/commons/a/aa/Kitchen-knife-santoku-form.jpg)]
-
-A drop in replacement for knife that helps you build out processes around Chef. 
+(http://upload.wikimedia.org/wikipedia/commons/a/aa/Kitchen-knife-santoku-form.jpg)
 
 ## Overview
 
