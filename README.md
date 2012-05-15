@@ -6,31 +6,19 @@ http://en.wikipedia.org/wiki/Santoku
 
 ## Overview
 
-There are two concepts in Santoku: callbacks, and notifiers. Santoku fires off callbacks before and after any knife command is run. Callbacks can be any arbitrary ruby code in config/santoku-before.rb or config/santoku-after.rb. They are primarily made up of regexp matcher functions that fire off notifications to santoku notification plugins. Right now only Hipchat is support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems.
+Santoku is primarily used for firing off notifications when operators run knife commands. There are two concepts in Santoku: callbacks, and notifiers. Santoku fires off callbacks before and after any knife command is run. Callbacks can be any arbitrary ruby code in config/santoku-before.rb or config/santoku-after.rb. However, they are primarily made up of regexp matcher functions that fire off notifications to santoku notification plugins. Right now only Hipchat is support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems.
 
 ## Usage
 
-Just run knife commands with the santoku command instead of knife. For example, any time you would have run this:
+Just run knife commands with the santoku command instead of knife. 
+
+For example, any time you would have run this:
 
 	knife cookbook upload rabbitmq
 
 just run it with santoku instead
 
 	santoku cookbook upload rabbitmq
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'santoku'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install santoku
 
 ## Configuration
 
@@ -70,6 +58,20 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	end
 	
 If you placed that in the config/santoku-after.rb file, you should start receiving notifications in your hipchat room that someone has altered something on the server with knife.
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'santoku'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install santoku
 
 ## Todo
 * Add in the logic for end user drop in notification plugins
