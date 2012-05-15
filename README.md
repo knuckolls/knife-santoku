@@ -45,8 +45,9 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	  notify :hipchat
 	end
 
-	match /cookbook upload/ do
-	  notify :hipchat
+	require 'etc'
+	match /cookbook upload (.*)/ do |cookbook|
+	  notify :hipchat, "#{Etc.getlogin} finished uploading #{cookbook}"
 	end
 
 	match /create/ do
@@ -57,7 +58,7 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	  notify :hipchat
 	end
 
-	match /boostrap/ do 
+	match /bootstrap/ do 
 	  notify :hipchat
 	end
 	

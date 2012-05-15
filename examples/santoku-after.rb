@@ -21,6 +21,6 @@ match /delete/ do
   notify :hipchat
 end
 
-match /boostrap/ do 
+match /bootstrap/ do 
   notify :hipchat
 end
