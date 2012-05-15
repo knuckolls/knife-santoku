@@ -25,9 +25,7 @@ module Santoku
         matches = matches.to_a.drop(1)
 
         proc.call(*matches)
-      end
-      
-      if @argv =~ regexp
+      elsif @argv =~ regexp
         proc.call
       end
     end
