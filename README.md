@@ -1,10 +1,11 @@
-# Santoku - A drop in replacement for knife that helps you build out processes around Chef
+# Santoku 
+A drop in replacement for knife that helps you build out processes around Chef.
 
-[(http://upload.wikimedia.org/wikipedia/commons/a/aa/Kitchen-knife-santoku-form.jpg)]
+![Santoku](http://upload.wikimedia.org/wikipedia/commons/a/aa/Kitchen-knife-santoku-form.jpg)
 
 ## Overview
 
-There are two concepts in Santoku: callbacks, and notifiers. Santoku fires off callbacks before and after any knife command is run. Callbacks can be any arbitrary ruby code in config/santoku-before.rb or config/santoku-after.rb but are primarily made up of regexp matcher functions comprised of notifications to santoku notification plugins. Right now only Hipchat is supported. More work will be done to let you drop your own notification classes into lib/santoku/ of your chef repo to build integrations with your favourite systems.
+There are two concepts in Santoku: callbacks, and notifiers. Santoku fires off callbacks before and after any knife command is run. Callbacks can be any arbitrary ruby code in config/santoku-before.rb or config/santoku-after.rb. They are primarily made up of regexp matcher functions that fire off notifications to santoku notification plugins. Right now only Hipchat is support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems.
 
 ## Usage
 
