@@ -5,7 +5,7 @@ module Santoku
     class HipchatNotifier
       
       def initialize(config)
-        @url   = "http://api.hipchat.com/v1/rooms/message"
+        @url   = "https://api.hipchat.com/v1/rooms/message"
         
         @token = config["hipchat"]["token"]
         @room  = config["hipchat"]["room"]
