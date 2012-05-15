@@ -66,7 +66,7 @@ Put this in config/santoku-config.yml
 	    notify: false
 	    color:  "yellow"
 
-If you placed that in the config/santoku-after.rb file, you should start receiving notifications in your hipchat room whenever someone alters something on the server with knife.
+After configuring all of that you should start receiving notifications in your hipchat room whenever someone alters something on the server with knife. This can easily be adapted to add in notifications to other services.
 
 ## Installation
 
