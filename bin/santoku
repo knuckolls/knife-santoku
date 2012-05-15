@@ -26,7 +26,7 @@ $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", "lib")))
 require 'chef/application/knife'
 
 ## Contains a monkeypatch for Chef::Application::Knife. Shims in Santoku.
-require 'santoku'
+require 'knife-santoku'
 
 Chef::Application::Knife.new.run
 
