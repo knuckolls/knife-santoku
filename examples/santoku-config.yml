@@ -1,0 +1,6 @@
+hipchat:
+    token: "your_hipchat_api_token"
+    room: "developers"
+    from: "Knife"
+    notify: false
+    color:  "yellow"
