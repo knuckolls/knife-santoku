@@ -5,8 +5,8 @@ class Chef::Application::Knife
   
   # Run knife
   def run
-    require 'santoku'
-    santoku = ::Santoku::Application.new(ARGV)
+    require 'knife-santoku'
+    santoku = ::KnifeSantoku::Application.new(ARGV)
 
     Mixlib::Log::Formatter.show_time = false
     validate_and_parse_options

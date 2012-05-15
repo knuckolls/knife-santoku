@@ -1,7 +1,7 @@
 require 'chef/mixin/from_file'
 require 'etc'
 
-module Santoku
+module KnifeSantoku
   class Callback
     
     include Chef::Mixin::FromFile

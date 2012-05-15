@@ -1,6 +1,6 @@
 require 'httparty'
 
-module Santoku
+module KnifeSantoku
   module Notification
     class HipchatNotifier
       

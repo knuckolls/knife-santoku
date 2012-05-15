@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/santoku/version', __FILE__)
+require File.expand_path('../lib/knife_santoku/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Kevin Nuckolls"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "knife-santoku"
   gem.require_paths = ["lib"]
-  gem.version       = Santoku::VERSION
+  gem.version       = KnifeSantoku::VERSION
   
   gem.add_dependency "chef"
   gem.add_dependency "httparty"

@@ -1,3 +1,3 @@
-module Santoku
+module KnifeSantoku
   VERSION = "0.1.2"
 end

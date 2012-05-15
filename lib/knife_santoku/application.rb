@@ -1,7 +1,7 @@
 require 'app_conf'
 require 'chef/knife'
 
-module Santoku
+module KnifeSantoku
   class Application
     def initialize(argv)
       
@@ -19,7 +19,7 @@ module Santoku
       
       # load up notifiers & custom code out of lib
       #notifier = Notifier.new(config,lib_folder)
-      notifier = ::Santoku::Notifier.new(config)
+      notifier = ::KnifeSantoku::Notifier.new(config)
       
       
       # load up callbacks
