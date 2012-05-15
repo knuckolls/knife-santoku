@@ -23,17 +23,12 @@ For example, any time you would have run this:
 just run it with santoku instead
 
 	santoku cookbook upload rabbitmq
+	
+And if you reallly love santoku just make it an alias, put it in your profile, and forget all about it:
+
+	alias knife="santoku"
 
 ## Configuration
-
-Put this in config/santoku-config.yml
-
-	hipchat:
-	    token: "your_hipchat_api_token"
-	    room: "developers"
-	    from: "Knife"
-	    notify: false
-	    color:  "yellow"
 
 Put something like this in your config/santoku-before.rb or config/santoku-after.rb. These matchers will make sure that only commands that alter the chef server send off a notification.
 
@@ -62,6 +57,15 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	  notify :hipchat
 	end
 	
+Put this in config/santoku-config.yml
+
+	hipchat:
+	    token: "your_hipchat_api_token"
+	    room: "developers"
+	    from: "Knife"
+	    notify: false
+	    color:  "yellow"
+
 If you placed that in the config/santoku-after.rb file, you should start receiving notifications in your hipchat room whenever someone alters something on the server with knife.
 
 ## Installation
