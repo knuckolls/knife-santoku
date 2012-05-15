@@ -25,7 +25,7 @@ require 'rubygems'
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", "lib")))
 require 'chef/application/knife'
 
-## Contains monkeypatches for Chef::Application::Knife. Shims in Santoku.
+## Contains a monkeypatch for Chef::Application::Knife. Shims in Santoku.
 require 'santoku'
 
 Chef::Application::Knife.new.run
