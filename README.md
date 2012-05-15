@@ -8,7 +8,7 @@ http://en.wikipedia.org/wiki/Santoku
 
 Santoku is primarily used for firing off notifications when knife commands are run. There are two concepts in Santoku: callbacks, and notifiers. Santoku fires off callbacks before and after any knife command is run. Callbacks can be any arbitrary ruby code in config/santoku-before.rb or config/santoku-after.rb. However, they are primarily made up of regexp matcher functions that fire off notifications to Santoku notification plugins. 
 
-Right now only Hipchat is support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems. If you build out something and would like it added to the master project just send me a pull request.
+Right now only Hipchat support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems. If you build out something and would like it added to the master project just send me a pull request.
 
 You don't have to use Santoku for notifications, that's just what it was originally built for.
 
