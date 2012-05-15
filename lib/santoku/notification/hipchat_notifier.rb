@@ -1,7 +1,7 @@
 require 'httparty'
 
 module Santoku
-  module Notifier
+  module Notification
     class HipchatNotifier
       
       def initialize(config)

@@ -20,7 +20,7 @@ module Santoku
       
       # load up notifiers & custom code out of lib
       #notifier = Notifier.new(config,lib_folder)
-      notifier = Notifier.new(config)
+      notifier = Santoku::Notifier.new(config)
       
       
       # load up callbacks

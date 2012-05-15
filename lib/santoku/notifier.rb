@@ -1,12 +1,10 @@
-require 'santoku/notifier/hipchat_notifier'
-
 module Santoku
   class Notifier    
     #def initialize(config, lib_folder)
     def initialize(config)
       @config = config
       
-      @notifiers = { :hipchat => HipchatNotifier.class }
+      @notifiers = { :hipchat => ::Santoku::Notification::HipchatNotifier.class }
       
       # iterate through our internal folder and our external folder for notification classes
     end
