@@ -1,4 +1,4 @@
-require 'notifier/hipchat_notifier'
+require 'santoku/notifier/hipchat_notifier'
 
 module Santoku
   class Notifier    
