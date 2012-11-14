@@ -15,7 +15,7 @@ module KnifeSantoku
       
       def notify(msg)
         campfire = Tinder::Campfire.new "#{@subdomain}" , :token => "#{@token}" 
-        room = campfire.rooms.find_room_by_id(@room)
+        room = campfire.find_room_by_name(@room)
         room.speak(msg) if @notify
       end
       
