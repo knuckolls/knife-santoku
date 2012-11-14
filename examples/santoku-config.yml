@@ -6,3 +6,8 @@ hipchat:
     from: "Knife"
     notify: false
     color:  "yellow"
+campfire:
+    subdomain: "mycampfiredomain"
+    token: "your_campfire_api_token"
+    room: "developers"
+    notify: false

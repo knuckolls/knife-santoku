@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "chef"
   gem.add_dependency "httparty"
   gem.add_dependency "app_conf"
+  gem.add_dependency "tinder"
 end
