@@ -1,5 +1,5 @@
 ## Put this in config/santoku-after.rb
-## Use :hipchat, :campfire, :irc for the use of each notifier
+## Use :hipchat, :campfire, :email for the use of each notifier
 
 match /spork/ do
   notify :hipchat, "Someone used the spork plugin"
