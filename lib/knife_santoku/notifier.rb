@@ -4,7 +4,7 @@ module KnifeSantoku
     def initialize(config)
       @config = config
       
-      @notifiers = { :hipchat => ::KnifeSantoku::Notification::HipchatNotifier, :campfire => ::KnifeSantoku::Notification::CampfireNotifier }
+      @notifiers = { :hipchat => ::KnifeSantoku::Notification::HipchatNotifier, :campfire => ::KnifeSantoku::Notification::CampfireNotifier, :email => ::KnifeSantoku::Notification::EmailNotifier }
       
       # iterate through our internal folder and our external folder for notification classes
     end

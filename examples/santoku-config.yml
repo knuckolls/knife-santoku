@@ -11,3 +11,15 @@ campfire:
     token: "your_campfire_api_token"
     room: "developers"
     notify: false
+email:
+    to: "john@doe.com"
+    from: "doe@john.com"
+    subject: "MyKnifeStatus"
+    address: "smtp.example.com"
+    port: "25"
+    enable_tls: false
+    user_name: "john@example.com"
+    password: "password"
+    authentication: "plain"
+    domain: "localhost.localdomain"
+    notify: false
