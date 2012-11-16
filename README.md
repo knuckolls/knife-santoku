@@ -8,7 +8,7 @@ http://en.wikipedia.org/wiki/Santoku
 
 Santoku is primarily used for firing off notifications when knife commands are run. There are two concepts in Santoku: callbacks, and notifiers. Santoku fires off callbacks before and after any knife command is run. Callbacks can be any arbitrary ruby code in config/santoku-before.rb or config/santoku-after.rb. However, they are primarily made up of regexp matcher functions that fire off notifications to Santoku notification plugins. 
 
-Right now only Hipchat & Campfire support has been written. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems. If you build out something and would like it added to the master project just send me a pull request.
+Right now only Hipchat, Campfire & Email support has been written. Email support is built using pony, reference the pony gem for email config options. More work will be done to let you drop your own notification classes into the  lib/santoku/ folder of your chef repo to build integrations with your favorite systems. If you build out something and would like it added to the master project just send me a pull request.
 
 You don't have to use Santoku for notifications, that's just what it was originally built for.
 
@@ -36,6 +36,10 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	  notify :hipchat, "Someone used the spork plugin"
 	end
 
+	match /spork/ do
+	  notify :campfire, "Someone used the spork plugin"
+	end
+
 	match /from file/ do
 	  notify :hipchat
 	end
@@ -53,6 +57,10 @@ Put something like this in your config/santoku-before.rb or config/santoku-after
 	  notify :hipchat
 	end
 
+	match /delete/ do
+	  notify :email
+	end
+
 	match /bootstrap/ do 
 	  notify :hipchat
 	end
@@ -65,6 +73,8 @@ Put this in config/santoku-config.yml
 	    from: "Knife"
 	    notify: false
 	    color:  "yellow"
+
+Look in the examples directory for more configuation examples.
 
 After configuring all of that you should start receiving notifications in your hipchat room whenever someone alters something on the server with knife. This can easily be adapted to add in notifications to other services.
 
